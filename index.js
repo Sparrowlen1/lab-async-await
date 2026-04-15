@@ -24,7 +24,7 @@ async function fetchPosts() {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts");
         const data = await response.json();
 
-        // Call display function
+        // Call display function from the above code
         displayPosts(data);
 
     } catch (error) {
@@ -32,5 +32,5 @@ async function fetchPosts() {
     }
 }
 
-// Call the function
+// now lets call the function ya fetch post
 fetchPosts();
