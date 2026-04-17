@@ -5,7 +5,7 @@ function displayPosts(posts) {
     postList.innerHTML = "";
 
     posts.forEach(post => {
-        // Create elements
+    
         const li = document.createElement("li");
         const title = document.createElement("h1");
         const body = document.createElement("p");
@@ -24,7 +24,7 @@ async function fetchPosts() {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts");
         const data = await response.json();
 
-        // Call display function from the above code
+       
         displayPosts(data);
 
     } catch (error) {
